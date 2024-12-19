@@ -1,0 +1,30 @@
+{
+  "menu": {
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "pages": "Pages",
+    "profile": "Profile",
+    "logout": "LogOut",
+    "contact": "Contact Us"
+  },
+  "actions": {
+    "add_page": "Add Page",
+    "page_added_successfully": "Page added successfully",
+    "failed_to_add_page": "Failed to add page",
+    "error_fetching_data": "Error fetching data"
+  },
+  "form": {
+    "enter_page_key": "Enter Page Key",
+    "enter_label": "Enter Label",
+    "please_enter_page_key": "Please enter the Page Key",
+    "please_enter_label": "Please enter the Label"
+  },
+  "table": {
+    "id": "ID",
+    "label": "Label",
+    "page_key": "Page Key"
+  },
+  "modals": {
+    "add_page_title": "Add New Page"
+  }
+}
