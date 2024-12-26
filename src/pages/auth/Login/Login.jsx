@@ -24,11 +24,13 @@ const Login = () => {
         onSubmit: async (values) => {
             setLoadEmail(true);
             try {
-                let { data } = await axios.post(`${import.meta.env.VITE_BASE_URL}/auth/login`, values);
-                if (data.status === 200) {
+                let { data } = await axios.post(`${import.meta.env.VITE_BASE_URL}/login`, values);
+                console.log(data);
+                
+                if (data.success == true) {
                     localStorage.setItem('username', data?.data?.name)
                     localStorage.setItem('email', data?.data?.email)
-                    localStorage.setItem('token', data?.data?.token)
+                    localStorage.setItem('token', data?.access_token)
                     showNotification('success', 'Login Successful', 'You have successfully logged in.');
                     setTimeout(() => {
                         setLoadEmail(false);
@@ -42,6 +44,8 @@ const Login = () => {
             } catch (error) {
                 showNotification('error', 'Login Error', 'An error occurred while trying to log in. Please try again later.'); 
                 setLoadEmail(false);
+                console.log(error);
+
             }
         }
     });  
