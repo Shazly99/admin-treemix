@@ -29,8 +29,7 @@ const Navbar = () => {
     const languageMenu = (
         <Menu onClick={({ key }) => changeLanguage(key)}>
             <Menu.Item key="ar">العربية</Menu.Item>
-            <Menu.Item key="en">English</Menu.Item>
-            <Menu.Item key="fr">Français</Menu.Item>
+            <Menu.Item key="en">English</Menu.Item> 
         </Menu>
     );
     function logOut() {

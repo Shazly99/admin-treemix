@@ -15,7 +15,7 @@ i18next.use(HttpApi)
             order: ['cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
             caches: ['cookie', 'localStorage'],
         },
-        lng: localStorage.getItem('i18nextLng') || 'ar',
+        lng: localStorage.getItem('i18nextLng') || 'en',
         
         backend: {
             loadPath: '/locales/{{lng}}/translation.json',
